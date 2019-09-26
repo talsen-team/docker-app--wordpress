@@ -4,5 +4,10 @@
 !.vscode/tasks.json
 !bash-commands
 !bash-util
+!docker/
+!docker/server--wordpress/
+!docker/server--wordpress/default.docker
+!docker/server--wordpress-database/
+!docker/server--wordpress-database/default.docker
 !.gitignore
 !.gitmodules
