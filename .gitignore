@@ -9,5 +9,8 @@
 !docker/server--wordpress/default.docker
 !docker/server--wordpress-database/
 !docker/server--wordpress-database/default.docker
+!docker-compose/
+!docker-compose/server--wordpress/
+!docker-compose/server--wordpress/default.docker-compose
 !.gitignore
 !.gitmodules

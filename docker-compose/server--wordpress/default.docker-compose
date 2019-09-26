@@ -1,0 +1,39 @@
+version:                 '3'
+
+services:
+  server--wordpress:
+    build:
+      context:           './../../docker/server--wordpress'
+      dockerfile:        'default.docker'
+    container_name:      'server--wordpress'
+    depends_on:
+      -                  'server--wordpress-database'
+    image:               'talsenteam/docker-wordpress:v7.3-php-apache'
+    networks:
+      network-wordpress:
+        ipv4_address:    '10.1.0.2'
+    ports:
+      -                  '80:80'
+    restart:             'no'
+
+  server--wordpress-database:
+    build:
+      context:           './../../docker/server--wordpress-database'
+      dockerfile:        'default.docker'
+    container_name:      'server--wordpress-database'
+    env_file:
+      -                  './../../container.env'
+    image:               'talsenteam/docker-wordpress-database:v5.7'
+    networks:
+      network-wordpress:
+        ipv4_address:    '10.1.0.12'
+    restart:             'no'
+    volumes:
+      -                  '${HOST_PATH_TO_VOLUMES_ROOT}/server--wordpress-database/var/lib/mysql:/var/lib/mysql'
+
+networks:
+  network-wordpress:
+    driver:              'bridge'
+    ipam:
+      config:
+        - subnet:        '10.1.0.0/16'
