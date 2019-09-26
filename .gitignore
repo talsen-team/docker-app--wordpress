@@ -6,6 +6,10 @@
 !bash-util
 !docker/
 !docker/server--wordpress/
+!docker/server--wordpress/rootfs/
+!docker/server--wordpress/rootfs/opt/
+!docker/server--wordpress/rootfs/opt/server--wordpress/
+!docker/server--wordpress/rootfs/opt/server--wordpress/entrypoint.sh
 !docker/server--wordpress/default.docker
 !docker/server--wordpress-database/
 !docker/server--wordpress-database/default.docker
