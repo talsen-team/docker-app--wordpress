@@ -1,4 +1,4 @@
-# docker-app: wodpress
+# docker-app: wordpress
 
 ![GitHub tag (latest by date)](https://img.shields.io/github/tag-date/talsen-team/docker-app--wordpress.svg?style=for-the-badge)
 [![Docker Automated build](https://img.shields.io/docker/cloud/automated/talsenteam/docker-wordpress.svg?style=for-the-badge)](//hub.docker.com/r/talsenteam/docker-wordpress/)
