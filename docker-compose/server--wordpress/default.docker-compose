@@ -16,7 +16,7 @@ services:
       -                  '80:80'
     restart:             'no'
     volumes:
-      -                      '${HOST_PATH_TO_VOLUMES_ROOT}/server--wordpress/var/www/html/:/var/www/html'
+      -                  '${HOST_PATH_TO_VOLUMES_ROOT}/server--wordpress/var/www/html/:/var/www/html'
 
   server--wordpress-database:
     build:
