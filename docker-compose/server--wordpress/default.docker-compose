@@ -8,7 +8,7 @@ services:
     container_name:      'server--wordpress'
     depends_on:
       -                  'server--wordpress-database'
-    image:               'talsenteam/docker-wordpress:v7.3'
+    image:               'talsenteam/docker-wordpress:v7.4'
     networks:
       network-wordpress:
         ipv4_address:    '10.1.0.2'
