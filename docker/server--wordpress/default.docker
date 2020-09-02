@@ -1,7 +1,1 @@
-FROM wordpress:5.4-apache
-
-COPY ./rootfs/ /
-
-ENTRYPOINT [ "/bin/bash", "/opt/server--wordpress/entrypoint.sh" ]
-
-CMD [ "apache2-foreground" ]
+FROM wordpress:5.5-apache
